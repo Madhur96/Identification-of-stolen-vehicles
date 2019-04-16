@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ title }}</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+</head>
+
+<body>
+  <center>
+    <h1>{{ title }}</h1>
+  </center>
+  <p>{{values}}</p>
+  <p id="img1"></p>
+  <img src="{{ url_for('static', filename='car.jpg') }}" style="float:left;width:600px;height:600px;"/>
+  <form>
+    <input type="button" value="Back to Home page" onclick="window.location.href='/'" />
+  </form>
+</body>
+</html>
